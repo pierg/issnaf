@@ -1,7 +1,7 @@
 import { useList } from "@pankod/refine-core";
 import { Typography, Box, Stack, Card, CardContent, Grid, Button} from "@pankod/refine-mui";
 import JsonData from "data/data.json";
-import { Description, CheckCircle, Gavel } from '@mui/icons-material';
+import { Groups, TipsAndUpdates, Celebration } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 
 
@@ -73,46 +73,46 @@ const Home = () => {
   </Typography>
   <Grid container spacing={3} mt={3}>
     <Grid item xs={12} sm={4}>
-      <Card sx={{ height: '100%' }}>
-        <CardContent>
-          <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
-            <Description fontSize="large" color="primary" />
-          </Box>
-          <Typography variant="h5" color="primary" gutterBottom>
-            Connect
-          </Typography>
-          <Typography variant="body1">
-            We will launch a platform on ISSNAF BAC where individuals can register and create a profile to showcase their skills. Individuals will be asked to identify their interest as "top down" or "bottom up".
-          </Typography>
-        </CardContent>
-      </Card>
+    <Card sx={{ height: '100%' }}>
+  <CardContent>
+    <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
+      <Groups style={{ fontSize: 96 }} color="primary" />
+    </Box>
+    <Typography variant="h5" color="primary" gutterBottom>
+      Connect
+    </Typography>
+    <Typography variant="body1">
+      Complete your profile to showcase your expertise and interests, and connect with other members of our community.
+    </Typography>
+  </CardContent>
+</Card>
     </Grid>
     <Grid item xs={12} sm={4}>
       <Card sx={{ height: '100%' }}>
         <CardContent>
-          <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
-            <Gavel fontSize="large" color="primary" />
-          </Box>
+        <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
+      <TipsAndUpdates style={{ fontSize: 96 }} color="primary" />
+    </Box>
           <Typography variant="h5" color="primary" gutterBottom>
             Empower
           </Typography>
           <Typography variant="body1">
-            To register for "Meet in the Middle", individuals must complete a short questionnaire about their profile, expertise, and interests. Registered individuals can submit posts about an idea or collaboration that they would like to implement and the skill/expertise needed.
-          </Typography>
+          Explore current posts or submit your own about an idea or collaboration you would like to pursue and the skills/expertise required.
+    </Typography>
         </CardContent>
       </Card>
     </Grid>
     <Grid item xs={12} sm={4}>
       <Card sx={{ height: '100%' }}>
         <CardContent>
-          <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
-            <CheckCircle fontSize="large" color="primary" />
-          </Box>
+        <Box display="flex" alignItems="center" justifyContent="center" mb={2}>
+      <Celebration style={{ fontSize: 96 }} color="primary" />
+    </Box>
           <Typography variant="h5" color="primary" gutterBottom>
             Celebrate
           </Typography>
           <Typography variant="body1">
-            We will organize a first "Meet in the Middle" event where participants will share their ideas for new startup ventures or scientific partnerships (top down) and will meet up and partner with individuals with the right skills (bottom up). The newly formed team will have a month to assess feasibility of ideas and execution.
+          Participate in our events where you can share your ideas for new startup ventures or scientific partnerships (top-down) and meet up with individuals possessing the skills needed to bring your ideas to life (bottom-up).
           </Typography>
         </CardContent>
       </Card>
