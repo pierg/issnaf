@@ -15,12 +15,12 @@ import MemberCard from "./member/MemberCard";
 import TopMember from "./home/TopMember";
 
 export {
-    Profile,
-    PostCard,
-    CustomButton,
-    PieChart,
-    PostsStats,
-    TotalStats,
-    MemberCard,
-    TopMember,
+  Profile,
+  PostCard,
+  CustomButton,
+  PieChart,
+  PostsStats,
+  TotalStats,
+  MemberCard,
+  TopMember,
 };

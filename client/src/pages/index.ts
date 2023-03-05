@@ -9,13 +9,13 @@ import PostDetails from "./post-details";
 import EditPost from "./edit-post";
 
 export {
-    MemberProfile,
-    Members,
-    AllPosts,
-    CreatePost,
-    Home,
-    Login,
-    MyProfile,
-    PostDetails,
-    EditPost,
+  MemberProfile,
+  Members,
+  AllPosts,
+  CreatePost,
+  Home,
+  Login,
+  MyProfile,
+  PostDetails,
+  EditPost,
 };
