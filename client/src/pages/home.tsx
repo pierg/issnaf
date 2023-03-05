@@ -13,6 +13,7 @@ import { Groups, TipsAndUpdates, Celebration } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 import { PieChart, PostsStats, TotalStats, PostCard } from "components";
+import { sf } from "assets";
 
 const Home = () => {
   const {
@@ -46,13 +47,16 @@ const Home = () => {
     <Box>
       <Box
         sx={{
-          bgcolor: "#F9FAFB",
+          backgroundImage: `url(${sf})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
           display: "flex",
           flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
           minHeight: "50vh",
           px: 4,
+          color: "white",
         }}
       >
         <Typography variant="h2" sx={{ textAlign: "center", mb: 2 }}>
@@ -87,6 +91,7 @@ const Home = () => {
             color="primary"
             component={Link}
             to="/users"
+            sx={{ bgcolor: "rgba(255, 255, 255, 0.2)" }}
           >
             Sign Up
           </Button>
