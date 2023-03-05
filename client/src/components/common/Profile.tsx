@@ -15,6 +15,7 @@ function checkImage(url: any) {
 const Profile = ({ id, type, name, avatar, email, posts, occupation, location, description, skills }: ProfileProps) => {
 
     const navigate = useNavigate();
+    console.log(skills)
 
     return (
 

@@ -37,7 +37,7 @@ const MemberCard = ({
     const { data: currentUser } = useGetIdentity();
 
     const generateLink = () => {
-        if (currentUser.email === email) return "/users";
+        if (currentUser.email === email) return `/members/show/${id}`;
 
         return `/members/show/${id}`;
     };
