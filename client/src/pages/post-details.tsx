@@ -211,6 +211,9 @@ const PostDetails = () => {
                 handleClick={() => {
                   if (isCurrentUser) {
                     navigate(`/posts/edit/${postDetails._id}`);
+                  } else {
+                    const email = `mailto:${postDetails.creator.email}`;
+                    window.location.href = email;
                   }
                 }}
               />
@@ -229,10 +232,11 @@ const PostDetails = () => {
 
           <Box>
             <CustomButton
-              title="Send an Email"
+              title="Message"
               backgroundColor="#3A98B9"
               color="#FCFCFC"
               fullWidth
+              icon={<ChatBubble />}
               handleClick={sendEmail}
             />
           </Box>

@@ -98,7 +98,11 @@ const Profile = ({
                     // fullWidth
                     icon={!(type === "My") ? <ChatBubble /> : <Edit />}
                     handleClick={() => {
-                      if (type === "My") {
+                      let email = ""; // declare the variable outside the if statement
+                      if (type !== "My") {
+                        email = `mailto:${email}`;
+                        window.location.href = email;
+                      } else {
                         navigate(`/users/edit/${id}`);
                       }
                     }}
