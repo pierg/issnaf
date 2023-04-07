@@ -1,5 +1,6 @@
 import { Logo } from "./styled";
 import { BikeWhiteIcon } from "components";
+import { logo } from "assets";
 
 type TitleProps = {
     collapsed: boolean;
@@ -8,11 +9,7 @@ type TitleProps = {
 export const Title: React.FC<TitleProps> = ({ collapsed }) => {
     return (
         <Logo>
-            {collapsed ? (
-                <BikeWhiteIcon style={{ color: "white", fontSize: "32px" }} />
-            ) : (
-                <img src="/images/fine-foods.svg" alt="Finefood" />
-            )}
+               <img src={logo} alt="ISSNAF" />
         </Logo>
     );
 };

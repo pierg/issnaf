@@ -13,7 +13,7 @@ import { Groups, TipsAndUpdates, Celebration } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 
 import { PieChart, PostsStats, TotalStats, PostCard } from "components";
-import { sf } from "assets";
+import { sf2 } from "assets";
 
 const Home = () => {
   const {

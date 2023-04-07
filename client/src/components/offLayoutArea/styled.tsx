@@ -5,7 +5,7 @@ export const ToggleContainer = styled.div`
     top: calc(50% - 28px);
     right: 0px;
     transform: translateX(101px);
-    background-color: #fb7a32;
+    background-color: #879d85;
     text-align: center;
     padding: 6px 12px 6px 12px;
     border-top-left-radius: 99px;

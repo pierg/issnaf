@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const NewCustomersWrapper = styled.div`
-    height: 232px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

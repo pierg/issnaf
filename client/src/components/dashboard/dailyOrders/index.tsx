@@ -69,11 +69,6 @@ export const DailyOrders: React.FC = () => {
                     )}
                 </TitleAreNumber>
             </TitleArea>
-            <Column
-                style={{ padding: 0, height: 135 }}
-                appendPadding={10}
-                {...config}
-            />
         </DailyOrderWrapper>
     );
 };

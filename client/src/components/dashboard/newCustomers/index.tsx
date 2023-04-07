@@ -64,23 +64,9 @@ export const NewCustomers: React.FC = () => {
             <NewCustomersWrapper>
                 <Header>
                     <Title level={3}>{t("dashboard.newCustomers.title")}</Title>
-                    <HeaderNumbers>
-                        <Text strong>{data?.data.total ?? 0}</Text>
-                        <div>
-                            <Text strong>{data?.data.trend ?? 0}%</Text>
-                            {(data?.data?.trend ?? 0) > 0 ? (
-                                <IncreaseIcon />
-                            ) : (
-                                <DecreaseIcon />
-                            )}
-                        </div>
-                    </HeaderNumbers>
+
                 </Header>
-                <Column
-                    style={{ padding: 0, height: 162 }}
-                    appendPadding={10}
-                    {...config}
-                />
+
             </NewCustomersWrapper>
         </ConfigProvider>
     );

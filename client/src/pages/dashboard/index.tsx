@@ -1,6 +1,8 @@
 import { Row, Col, Card, Typography } from "@pankod/refine-antd";
 import { useTranslation } from "react-i18next";
 
+import { sf2, issnaf, posts } from "assets"
+
 import {
     DailyRevenue,
     DailyOrders,
@@ -20,49 +22,52 @@ export const DashboardPage: React.FC = () => {
         <Row gutter={[16, 16]}>
             <Col md={24}>
                 <Row gutter={[16, 16]}>
-                    <Col xl={10} lg={24} md={24} sm={24} xs={24}>
+                    <Col xl={8} lg={16} md={24} sm={24} xs={24}>
                         <Card
                             bodyStyle={{
                                 padding: 10,
                                 paddingBottom: 0,
                             }}
                             style={{
-                                background: "url(images/daily-revenue.png)",
-                                backgroundColor: "#3a233c",
+//                                 background: `url(${posts})`,
+                                backgroundColor: "#86bacf",
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "right",
                             }}
+                            hoverable={true}
                         >
                             <DailyRevenue />
                         </Card>
                     </Col>
-                    <Col xl={7} lg={12} md={24} sm={24} xs={24}>
+                    <Col xl={8} lg={16} md={24} sm={24} xs={24}>
                         <Card
                             bodyStyle={{
                                 padding: 10,
                                 paddingBottom: 0,
                             }}
                             style={{
-                                background: "url(images/daily-order.png)",
-                                backgroundColor: "#332a4b",
+//                                 background: "url(images/daily-order.png)",
+                                backgroundColor: "#879d85",
                                 backgroundRepeat: "no-repeat",
                             }}
+                            hoverable={true}
                         >
                             <DailyOrders />
                         </Card>
                     </Col>
-                    <Col xl={7} lg={12} md={24} sm={24} xs={24}>
+                    <Col xl={8} lg={16} md={24} sm={24} xs={24}>
                         <Card
                             bodyStyle={{
                                 padding: 10,
                                 paddingBottom: 0,
                             }}
                             style={{
-                                background: "url(images/new-orders.png)",
-                                backgroundColor: "#3d335b",
+//                                 background: "url(images/new-orders.png)",
+                                backgroundColor: "#b0465a",
                                 backgroundRepeat: "no-repeat",
                                 backgroundPosition: "right",
                             }}
+                            hoverable={true}
                         >
                             <NewCustomers />
                         </Card>
@@ -70,26 +75,22 @@ export const DashboardPage: React.FC = () => {
                 </Row>
             </Col>
             <Col xl={17} lg={16} md={24} sm={24} xs={24}>
-                <Card
+             <Card
                     bodyStyle={{
-                        height: 550,
-                        padding: 0,
+                        height: 600,
+                        overflowY: "scroll",
                     }}
                     title={
-                        <Text
-                            strong /* style={{ fontSize: 24, fontWeight: 800 }} */
-                        >
-                            {t("dashboard.deliveryMap.title")}
-                        </Text>
+                        <Text strong>{t("dashboard.recentOrders.title")}</Text>
                     }
                 >
-                    <DeliveryMap />
+                    <RecentOrders />
                 </Card>
             </Col>
-            <Col xl={7} lg={8} md={24} sm={24} xs={24}>
+            <Col xl={7} lg={16} md={24} sm={24} xs={24}>
                 <Card
                     bodyStyle={{
-                        height: 550,
+                        height: 600,
                         overflowY: "scroll",
                     }}
                     title={
@@ -102,9 +103,13 @@ export const DashboardPage: React.FC = () => {
                 </Card>
             </Col>
             <Col xl={17} lg={16} md={24} sm={24} xs={24}>
-                <Card
+             <Card
+                    bodyStyle={{
+                        height: 600,
+                        overflowY: "scroll",
+                    }}
                     title={
-                        <Text strong>{t("dashboard.recentOrders.title")}</Text>
+                        <Text strong>Your Projects</Text>
                     }
                 >
                     <RecentOrders />
@@ -113,7 +118,7 @@ export const DashboardPage: React.FC = () => {
             <Col xl={7} lg={8} md={24} sm={24} xs={24}>
                 <Card
                     title={
-                        <Text strong>{t("dashboard.trendingMenus.title")}</Text>
+                        <Text strong>Messages</Text>
                     }
                 >
                     <TrendingMenu />

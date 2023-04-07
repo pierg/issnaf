@@ -185,16 +185,16 @@
             "title": "Total Sales"
         },
         "dailyRevenue": {
-            "title": "Daily Revenue"
+            "title": "Create Post"
         },
         "dailyOrders": {
-            "title": "Daily Orders"
+            "title": "Messages"
         },
         "newCustomers": {
-            "title": "New Customers"
+            "title": "Your Projects"
         },
         "timeline": {
-            "title": "Timeline",
+            "title": "Upcoming Events",
             "orderStatuses": {
                 "pending": "Preparing order",
                 "ready": "Order is ready",
@@ -204,7 +204,7 @@
             }
         },
         "recentOrders": {
-            "title": "Recent Orders"
+            "title": "Recent Posts"
         },
         "trendingMenus": {
             "title": "Daily Trending Menus"
